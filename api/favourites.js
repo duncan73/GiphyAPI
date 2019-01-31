@@ -1,3 +1,3 @@
-let favourites = []
+let favourites = [];
 
-export { favourites };
+export {favourites};
