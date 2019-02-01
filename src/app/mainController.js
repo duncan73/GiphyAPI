@@ -69,7 +69,7 @@ export default function(giphyService) {
   main.removeFromFavourites = function(item) {
     giphyService.removeFromFavourites(item).then(
         function(success) {
-          main.getFavourites();
+          main.favourites = main.favourites.filter(elm => elm.id !== item.id);
         },
         function(fail) {
           console.log(fail);
